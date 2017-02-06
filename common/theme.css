@@ -1,13 +1,13 @@
 :root {
   --color-primary: blue;
-  --color-primary-light: gold;
-  --color-secondary: lightcoral;
-  --color-accent: greenyellow;
-  --color-neutral-beige: #e2e2e2;
-  --color-whatever: peach;
+  --color-primary-light: babyblue;
+  --color-secondary: coral;
+  --color-accent: blue;
+  --color-neutral-beige: babyblue;
+  --color-whatever: coral;
 
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Alegreya Sans", sans-serif;
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Merriweather Sans", sans-serif;
 }
 
 html {
