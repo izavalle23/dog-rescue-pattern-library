@@ -1,13 +1,12 @@
 :root {
-  --color-primary: #0222c2;
-  --color-primary-light:#a4b3fc;
-  --color-secondary: #0000;
-  --color-accent: #a4b3fc;
-  --color-neutral-beige: #ffff;
-  --color-whatever: #a4b3fc;
+  --color-primary: #833333;
+  --color-primary-light: #bc7d84;
+  --color-secondary: #9cc;
+  --color-neutral: #fff;
+  --color-base: #fff;
 
-  --font-primary: "Raleway", sans-serif;
-  --font-secondary: "Merriweather Sans", sans-serif;
+  --font-primary: "Source Sans Pro", sans-serif;
+  --font-secondary: "EB Garamond", serif;
 }
 
 html {
