@@ -1,0 +1,15 @@
+:root{
+  --color-primary: blue;
+  --color-primary-light: gold;
+  --color-secondary: lightcoral;
+  --color-accent: greenyellow;
+  --color-neutral-beige: #e2e2e2;
+  --color-whatever: peach;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary:"Alegreya Sans", sans-serif;
+}
+
+html{
+  font-family:  var(--font-primary);
+}
