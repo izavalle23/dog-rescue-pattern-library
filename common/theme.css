@@ -1,10 +1,10 @@
 :root {
-  --color-primary: blue;
-  --color-primary-light: babyblue;
-  --color-secondary: coral;
-  --color-accent: blue;
-  --color-neutral-beige: babyblue;
-  --color-whatever: coral;
+  --color-primary: #0222c2;
+  --color-primary-light:#a4b3fc;
+  --color-secondary: #0000;
+  --color-accent: #a4b3fc;
+  --color-neutral-beige: #ffff;
+  --color-whatever: #a4b3fc;
 
   --font-primary: "Raleway", sans-serif;
   --font-secondary: "Merriweather Sans", sans-serif;
