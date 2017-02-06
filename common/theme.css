@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-primary: blue;
   --color-primary-light: gold;
   --color-secondary: lightcoral;
@@ -7,9 +7,9 @@
   --color-whatever: peach;
 
   --font-primary: "Roboto", sans-serif;
-  --font-secondary:"Alegreya Sans", sans-serif;
+  --font-secondary: "Alegreya Sans", sans-serif;
 }
 
-html{
-  font-family:  var(--font-primary);
+html {
+  font-family: var(--font-primary);
 }
