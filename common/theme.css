@@ -113,6 +113,20 @@ fieldset {
   border: 0;
 }
 
+
+mark {
+  background: #833333;
+  color: #fff;
+}
+
+ul, ol, dl {
+  list-style-type: none;
+}
+
+blockquote {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1em) {
 
   .hero-text {
