@@ -2,8 +2,8 @@
   --color-primary: #ffdea4;
   --color-primary-light: #f07322;
   --color-secondary: #f2aa1d;
-  --color-neutral: #fff;
-  --color-base: #fff;
+  --color-neutral: #f2aa1d;
+  --color-base: #ffdea4;
 
   --font-primary: "Roboto", slab;
   --font-secondary: "Raleway", sans-serif;
@@ -29,13 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color:  #f07322;
+  color: #f07322;
 }
 
 ul, ol, dl {
   list-style-type: none;
   text-decoration: none;
-  color:  #f2aa1d;
+  color: #f2aa1d;
 }
 
 .hero-image {
