@@ -6,7 +6,7 @@
   --color-base: #fff;
 
   --font-primary: "Roboto", slab;
-  --font-secondary: "Raleway", serif;
+  --font-secondary: "Raleway", sans-serif;
 }
 
 html {
@@ -19,7 +19,7 @@ body {
 }
 
 .nav-font {
-  font-family: 'Raleway', serif;
+  font-family: Raleway, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image {
-  background-image: url('../images/dogs1.jpg');
+  background-image: url("../images/dogs1.jpg");
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image-2 {
-  background-image: url('../images/dogs-2.jpg');
+  background-image: url("../images/dogs-2.jpg");
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image-3 {
-  background-image: url('../images/dogs1.jpg');
+  background-image: url("../images/dogs1.jpg");
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -63,9 +63,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .action-button {
   background: #f2aa1d;
-  padding: 10px 30px 10px 30px;
+  padding: 10px;
   border-radius: 15px;
-  font-family: "Raleway", serif;
+  font-family: Raleway, sans-serif;
 }
 
 .action-button:hover {
@@ -134,7 +134,7 @@ fieldset {
 }
 
 @media print {
-  
+
   nav {
     display: none;
   }
