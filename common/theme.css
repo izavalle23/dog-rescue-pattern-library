@@ -27,8 +27,15 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.a{
-  color: #f2aa1d;
+a {
+  text-decoration: none;
+  color:  #f07322;
+}
+
+ul, ol, dl {
+  list-style-type: none;
+  text-decoration: none;
+  color:  #f2aa1d;
 }
 
 .hero-image {
@@ -117,14 +124,9 @@ fieldset {
   border: 0;
 }
 
-
 mark {
-  background: #833333;
-  color: #fff;
-}
-
-ul, ol, dl {
-  list-style-type: none;
+  background: #f07322;
+  color: #000;
 }
 
 blockquote {
