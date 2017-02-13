@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.a{
+  color: #f2aa1d;
+}
+
 .hero-image {
   background-image: url("../images/dogs1.jpg");
   background-size: cover;
