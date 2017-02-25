@@ -7,7 +7,7 @@
   display: inline-block;
   font-size: 22px;
   border-radius: 12px;
-  transition-duration: 0.7s;
+  transition: background-color 600ms linear;
 
   color: #fff;
 }
@@ -33,7 +33,8 @@
 
 .btn-b-no-border {
   border: none;
-  padding: 10px;
+  padding: 10.5px;
+  transition: background-color 600ms linear;
 }
 
 .btn:hover {
@@ -53,4 +54,11 @@
   border-color: var(--color-secondary);
 
   color: var(--color-secondary);
+}
+
+.btn-small {
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: background-color 600ms linear;
 }
