@@ -1,4 +1,51 @@
 .card {
   border: 3px solid var(--color-primary);
+  border-radius: 9px;
+}
+
+img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+
+  color: #fff;
+  transition: background-color, border-color 500ms linear;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+
+  color: var(--color-primary-light);
+}
+
+.icon-card {
+  background-image: url("../../images/icon-1.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   border-radius: 8px;
+}
+
+.icon-card:hover {
+  background-image: url("../../images/icon-1-reverse.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+a {
+  color: #fff;
 }
