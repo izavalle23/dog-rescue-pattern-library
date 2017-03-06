@@ -25,14 +25,14 @@ p {
 
 .btn-blue {
   background-color: var(--color-primary);
-  border-color: var(--color-secondary);
+  border-color: var(--color-primary);
   transition: all 500ms linear;
-  color: #f2aa1d;
+  color: #fff;
 }
 
 .btn-blue:hover {
-  border-color: #f2aa1d;
-  background-color: #000;
+  border-color: #fff;
+  background-color: #f07322;
 
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
