@@ -39,20 +39,20 @@
 .btn-b-no-border {
   border: none;
   padding: 10.5px;
-  transition: background-color 300ms linear;
+  transition: background-color 500ms linear;
 }
 
 .btn-no-border {
   border: none;
   padding: 10.5px;
-  transition: background-color 300ms linear;
+  transition: background-color 500ms linear;
 }
 
 .btn-small {
   font-size: 16px;
   padding-top: 2px;
   padding-bottom: 2px;
-  transition: background-color 300ms linear;
+  transition: background-color 500ms linear;
 }
 
 .btn:hover {
@@ -81,34 +81,10 @@
 }
 
 .btn-icon:hover {
-  background-image: url("../../images/icon-1-reverse.svg");
+  background-image: url("../../images/icons.svg#heart");
   background-size: contain;
   background-position: center center;
   color: transparent;
   background-repeat: no-repeat;
   background-color: #fff;
-}
-
---
-Banner
-
-.btn {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.btn-blue {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-  transition: all 300ms linear;
-  color: #fff;
-}
-
-.btn-blue:hover {
-  border-color: #fff;
-  background-color: #fff;
-
-  color: var(--color-primary-light);
 }
