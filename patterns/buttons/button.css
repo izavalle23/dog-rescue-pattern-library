@@ -1,15 +1,9 @@
 .btn {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  border-radius: 12px;
-  transition: background-color 600ms linear;
 
   color: #fff;
+  transition: background-color 500ms linear;
 }
 
 .btn-light {
@@ -17,6 +11,7 @@
   border-color: var(--color-primary-light);
 
   color: #fff;
+  transition: background-color 500ms linear;
 }
 
 .btn-ghost {
@@ -24,24 +19,53 @@
   border-color: var(--color-primary);
 
   color: var(--color-primary);
+  transition: background-color 500ms linear;
 }
 
 .btn-blue {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
+  transition: background-color 500ms linear;
+}
+
+.btn-icon {
+  background-image: url("../../images/icon-1.svg");
+  background-size: contain;
+  background-position: center center;
+  color: transparent;
+  background-repeat: no-repeat;
 }
 
 .btn-b-no-border {
   border: none;
   padding: 10.5px;
-  transition: background-color 600ms linear;
+  transition: background-color 300ms linear;
+}
+
+.btn-no-border {
+  border: none;
+  padding: 10.5px;
+  transition: background-color 300ms linear;
+}
+
+.btn-small {
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: background-color 300ms linear;
 }
 
 .btn:hover {
   background-color: #fff;
-  border-color: #fff;
+  border-color: var(--color-primary);
 
   color: var(--color-primary);
+}
+
+.btn-light:hover {
+  border-color: var(--color-primary-light);
+
+  color: var(--color-primary-light);
 }
 
 .btn-ghost:hover {
@@ -56,9 +80,11 @@
   color: var(--color-secondary);
 }
 
-.btn-small {
-  font-size: 16px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  transition: background-color 300ms linear;
+.btn-icon:hover {
+  background-image: url("../../images/icon-1-reverse.svg");
+  background-size: contain;
+  background-position: center center;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
