@@ -11,7 +11,6 @@ The buttons use our primary color to draw attention and stand out. Each button h
  The blue buttons with no border are to be used when the background is dark and doesn't need the border to show its shape.
 
  The small buttons are for smaller boxes (eg. cards) that need a smaller button so the button doesn't take up the the whole area.
- 
  The icon button will be used only for cards/ buttons on the home page.
 
 Feel free to mix them with the `font-size` classes to make different sizes of buttons.
