@@ -24,6 +24,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#banner">Banner</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
           </ul>
         </nav>
       </div>
@@ -598,6 +599,103 @@
   &lt;/main>
 
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="forms">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Forms</h2>
+    </div>
+
+  </div>
+
+  
+
+    <div class="pattern-details push" id="forms-form">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/forms/form.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;h1&gt; Submit your form&lt;/h1>
+&lt;form class="max-length island" method="post" novalidate="">
+
+  &lt;div class="push-1-2">
+    &lt;label for="name">Name&lt;/label>
+    &lt;input id="name" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="name-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide a name&lt;/span>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="email">Email&lt;/label>
+    &lt;input type="email" id="email" required aria-describedby="email-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="email-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="pad-t">
+    &lt;label for="Number">Phone Number:&lt;/label>
+    &lt;input id="Number" type="tel" name="Number" required placeholder="(613) 123-4567">
+  &lt;/div>
+
+  &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 gutter">
+    &lt;h3 class="pad-t">Pay here:&lt;/h3>
+    &lt;fieldset>
+      &lt;div class="pad-t">
+        &lt;label for="account type">Account Type&lt;/label>
+        &lt;select id="account type" name="_account type">
+          &lt;option>Choose&lt;/option>
+          &lt;option>Freemium $0&lt;/option>
+          &lt;option>Premium $5/month&lt;/option>
+          &lt;option>Pro $8/month&lt;/option>
+        &lt;/select>
+      &lt;/div>
+
+
+      &lt;input id="Visa" type="radio" name="payment">
+      &lt;label for="Visa">Visa&lt;/label>
+
+      &lt;input id="Mastercard" type="radio" name="feels">
+      &lt;label for="Mastercard">Mastercard&lt;/label>
+
+      &lt;input id="Paypal" type="radio" name="feels">
+      &lt;label for="Paypal">Paypal&lt;/label>
+
+
+      &lt;div class="pad-t">
+        &lt;label for="Cardholder Name">Carholder Name:&lt;/label>
+        &lt;input id="Cardholder Name" type="Cardholder Name" name="Cardholder Name">
+      &lt;/div>
+
+      &lt;div class="pad-t">
+        &lt;label for="Expiration Date">Expiration Date&lt;/label>
+        &lt;input id="Expiration Date" type="date" name="expiration">
+      &lt;/div>
+
+      &lt;div class="pad-t">
+        &lt;label for="C.V.V.">C.V.V.&lt;/label>
+        &lt;input id="C.V.V." type="C.V.V." name="C.V.V.">
+      &lt;/div>
+    &lt;/fieldset>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+    &lt;label for="agree">You&apos;r now agreeing to the following terms:&lt;/label>
+    &lt;p class="error-message milli island-1-4 push-0" id="agree-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please agree to the following terms in order to submit.&lt;/span>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="pad-t-1-2">
+    &lt;button class="btn" type="submit">Send&lt;/button>
+  &lt;/div>
+&lt;/form>
 </pre></code>
             </div>
           </div>
