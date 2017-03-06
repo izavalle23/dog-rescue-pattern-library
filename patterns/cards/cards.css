@@ -23,14 +23,14 @@ p {
 }
 
 .btn {
-  background-color: #fff;
-  border: #fff;
+  background-color: #f07322;
+  border: #f07322;
   color: var(--color-primary);
 }
 
 .btn:hover {
   background-color: var(--color-primary);
-  border: var(--color-secondary);
+  border: var(--color-primary);
 }
 
 .icon-card {
