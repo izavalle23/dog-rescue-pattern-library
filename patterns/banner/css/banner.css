@@ -13,6 +13,7 @@ p {
   color: #fff;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 4px;
 }
 
 .btn {
@@ -31,7 +32,7 @@ p {
 
 .btn-blue:hover {
   border-color: #fff;
-  background-color: #fff;
+  background-color: #f2aa1d;
 
   color: var(--color-secondary);
 }
