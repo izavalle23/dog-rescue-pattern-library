@@ -10,10 +10,9 @@ img {
 p {
   position: absolute;
   bottom: 25%;
-  color: #000;
+  color: #fff;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 4px;
 }
 
 .btn {
@@ -27,12 +26,12 @@ p {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
   transition: all 500ms linear;
-  color: #f07322;
+  color: #fff;
 }
 
 .btn-blue:hover {
-  border-color: #f07322;
-  background-color: #f07322;
+  border-color: #fff;
+  background-color: #fff;
 
   color: var(--color-secondary);
 }
