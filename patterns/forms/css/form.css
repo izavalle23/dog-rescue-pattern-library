@@ -1,0 +1,33 @@
+.btn {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+
+  color: #fff;
+  transition: background-color 300ms linear;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border-color: var(--color-secondary);
+
+  color: var(--color-primary-light);
+}
+
+input + label {
+  display: inline;
+}
+
+.iconimg {
+  width: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  border-color: #f69a72;
+}
+
+legend {
+  color: #e34445;
+}

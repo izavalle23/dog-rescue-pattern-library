@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1> Submit your form</h1>
+  <form class="max-length island" method="post" novalidate>
+
+    <div class="push-1-2">
+      <label for="name">Name</label>
+      <input id="name" required aria-describedby="name-error">
+      <p class="error-message milli island-1-4 push-0" id="name-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please provide a name</span></p>
+    </div>
+
+    <div class="push-1-2">
+      <label for="email">Email</label>
+      <input type="email" id="email" required aria-describedby="email-error">
+      <p class="error-message milli island-1-4 push-0" id="email-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please provide a properly formatted email address</span></p>
+    </div>
+
+    <div class="pad-t">
+     <label  for="Number">Phone Number:</label>
+     <input id="Number" type="tel" name="Number" required placeholder="(613) 123-4567">
+    </div>
+
+<div class="unit xs-1 s-1 m-1-2 l-1-2 gutter">
+ <h3 class="pad-t">Pay here:</h3>
+<fieldset>
+ <div class="pad-t">
+   <label for="account type">Account Type</label>
+   <select id="account type" name="_account type">
+     <option>Choose</option>
+     <option>Freemium $0</option>
+     <option>Premium $5/month</option>
+     <option>Pro $8/month</option>
+   </select>
+ </div>
+
+
+   <input id="Visa" type="radio" name="payment">
+   <label for="Visa">Visa</label>
+
+   <input id="Mastercard" type="radio" name="feels">
+   <label for="Mastercard">Mastercard</label>
+
+   <input id="Paypal" type="radio" name="feels">
+   <label for="Paypal">Paypal</label>
+   </input>
+
+<div class="pad-t">
+ <label  for="Cardholder Name">Carholder Name:</label>
+ <input id="Cardholder Name" type="Cardholder Name" name="Cardholder Name">
+</div>
+
+<div class="pad-t">
+ <label  for="Expiration Date">Expiration Date</label>
+ <input id="Expiration Date" type="date" name="expiration">
+</div>
+
+<div class="pad-t">
+ <label  for="C.V.V.">C.V.V.</label>
+ <input id="C.V.V." type="C.V.V." name="C.V.V.">
+</div>
+</fieldset>
+</div>
+
+<div class="push-1-2">
+  <input type="checkbox" id="agree" required aria-describedby="agree-error">
+  <label for="agree">You'r now agreeing to the following terms:</label>
+  <p class="error-message milli island-1-4 push-0" id="agree-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please agree to the following terms in order to submit.</span></p>
+</div>
+
+    <div class="pad-t-1-2">
+      <button class="btn" type="submit">Send</button>
+    </div>
+  </form>
+
+</body>
+</html>
