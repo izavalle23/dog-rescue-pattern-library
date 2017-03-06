@@ -3,7 +3,7 @@
 }
 
 img {
-  width: 50%;
+  width: 100%;
   background-size: cover;
 }
 
@@ -24,7 +24,7 @@ p {
 }
 
 .btn-blue {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border-color: var(--color-secondary);
   transition: all 500ms linear;
   color: #f2aa1d;
@@ -32,7 +32,7 @@ p {
 
 .btn-blue:hover {
   border-color: #f2aa1d;
-  background-color: #f2aa1d;
+  background-color: #000;
 
   color: var(--color-secondary);
 }
