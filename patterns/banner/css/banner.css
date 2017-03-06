@@ -23,8 +23,8 @@ p {
 }
 
 .btn-blue {
-  background-color: var(--color-secondary);
-  border-color: var(--color-secondary);
+  background-color: #f2aa1d;
+  border-color: #f2aa1d;
   transition: all 500ms linear;
   color: #fff;
 }
