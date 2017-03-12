@@ -13,71 +13,95 @@
 </head>
 <body>
 
-  <h1> Submit your form</h1>
   <form class="max-length island" method="post" novalidate>
+    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+      <h3 class="push-0">
+        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error"  /></svg></i>
+        <span class="icon-label">There are items that require your attention</span>
+      </h3>
+    </div>
+
+    <h1>Application</h1>
 
     <div class="push-1-2">
-      <label for="name">Name</label>
-      <input id="name" required aria-describedby="name-error">
-      <p class="error-message milli island-1-4 push-0" id="name-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please provide a name</span></p>
+      <label for="name">Full Name</label>
+      <input id="name" placeholder="Firstname Lastname" required aria-describedby="name-error">
+      <p class="error-message milli island-1-5 push-0" id="name-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a name</span>
+      </p>
     </div>
 
     <div class="push-1-2">
-      <label for="email">Email</label>
-      <input type="email" id="email" required aria-describedby="email-error">
-      <p class="error-message milli island-1-4 push-0" id="email-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please provide a properly formatted email address</span></p>
+      <label for="name">Dog's Name on Loyal Rescue Inc. Website</label>
+      <input id="dogname" required aria-describedby="name-error">
+      <p class="error-message milli island-1-5 push-0" id="dogname-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide the name of the dog you wish to adopt or foster</span>
+      </p>
     </div>
 
-    <div class="pad-t">
-     <label  for="Number">Phone Number:</label>
-     <input id="number" type="tel" name="Number" required placeholder="(613) 123-4567">
+    <div class="push-1-2">
+      <label for="name">Email</label>
+      <input id="email" placeholder="me@gmail.com" required aria-describedby="email-error">
+      <p class="error-message milli island-1-5 push-0" id="email-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please provide an valid email</span>
+      </p>
     </div>
 
-<div class="unit xs-1 s-1 m-1-2 l-1-2 gutter">
- <h3 class="pad-t">Pay here:</h3>
-<fieldset>
- <div class="pad-t">
-   <label for="range">Account Type</label>
-   <select id="range" name="account type">
-     <option>Choose</option>
-     <option>Freemium $0</option>
-     <option>Premium $5/month</option>
-     <option>Pro $8/month</option>
-   </select>
+    <fieldset class="push-0">
+      <legend class="bold">Purpose for filling out the form</legend>
+      <input type="radio" id="adopt" name="adopt" required aria-describedby="purpose-error">
+      <label class="normal" for="adopt">Adoption</label>
+      <input type="radio" id="foster" name="foster" required aria-describedby="purpose-error">
+      <label class="normal" for="foster">Foster</label>
+      <p class="error-message milli island-1-5 push-0" id="purpose-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please select your intent or the purpose for filling out this form from the drop down menu</span>
+      </p>
+    </fieldset>
 
-   <input id="visa" type="radio" name="payment">
-   <label for="Visa">Visa</label>
+    <div class="push-1-2">
+      <label for="info">Info (optional)</label>
+      <textarea id="info" name="textarea"></textarea>
+    </div>
 
-   <input id="mastercard" type="radio" name="feels">
-   <label for="Mastercard">Mastercard</label>
+    <div class="push-1-2">
+      <label for="province">Province</label>
+      <select id="province" name="_province" required aria-describedby="province-error">
+        <option value="">Choose your province</option>
+        <option>Alberta</option>
+        <option>British Columbia</option>
+        <option>Manitoba</option>
+        <option>New Brunswick</option>
+        <option>Newfoundland and Labrador</option>
+        <option>Nova Scotia</option>
+        <option>Ontario</option>
+        <option>Prince Edward Island</option>
+        <option>Quebec</option>
+        <option>Saskatchewan</option>
+      </select>
+      <p class="error-message milli island-1-5 push-0" id="province-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please select your province from the drop down menu</span>
+      </p>
+    </div>
 
-   <input id="paypal" type="radio" name="feels">
-   <label for="Paypal">Paypal</label>
- </div>
-
-<div class="pad-t">
- <label  for="text">Carholder Name:</label>
- <input id="text" type="text" name="Cardholder Name">
-</div>
-
-<div class="pad-t">
- <label  for="Date">Expiration Date</label>
- <input id="Date" type="date" name="expiration">
-</div>
-
-</fieldset>
-</div>
-
-<div class="push-1-2">
-  <input type="checkbox" id="agree" required aria-describedby="agree-error">
-  <label for="agree">You'r now agreeing to the following terms:</label>
-  <p class="error-message milli island-1-4 push-0" id="agree-error"><i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i><span class="icon-label">Please agree to the following terms in order to submit.</span></p>
-</div>
+    <div class="push-1-2 pad-t-1-2">
+      <input type="checkbox" id="agree" required aria-describedby="agree-error">
+      <label for="agree">I agree to the <a>Terms and conditions</a></label>
+      <p class="error-message milli island-1-5 push-0" id="agree-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please agree the terms and conditions to continue</span>
+      </p>
+    </div>
 
     <div class="pad-t-1-2">
       <button class="btn" type="submit">Send</button>
     </div>
   </form>
 
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
