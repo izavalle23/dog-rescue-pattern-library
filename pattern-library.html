@@ -625,71 +625,79 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;h1&gt; Submit your form&lt;/h1>
-&lt;form class="max-length island" method="post" novalidate="">
+              <code><pre>&lt;form class="max-length island" method="post" novalidate=""&gt;
+  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+    &lt;h3 class="push-0">
+        &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">There are items that require your attention&lt;/span>
+      &lt;/h3>
+  &lt;/div>
+
+  &lt;h1>Application&lt;/h1>
 
   &lt;div class="push-1-2">
-    &lt;label for="name">Name&lt;/label>
-    &lt;input id="name" required aria-describedby="name-error">
-    &lt;p class="error-message milli island-1-4 push-0" id="name-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide a name&lt;/span>&lt;/p>
-  &lt;/div>
-
-  &lt;div class="push-1-2">
-    &lt;label for="email">Email&lt;/label>
-    &lt;input type="email" id="email" required aria-describedby="email-error">
-    &lt;p class="error-message milli island-1-4 push-0" id="email-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>&lt;/p>
-  &lt;/div>
-
-  &lt;div class="pad-t">
-    &lt;label for="Number">Phone Number:&lt;/label>
-    &lt;input id="Number" type="tel" name="Number" required placeholder="(613) 123-4567">
-  &lt;/div>
-
-  &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 gutter">
-    &lt;h3 class="pad-t">Pay here:&lt;/h3>
-    &lt;fieldset>
-      &lt;div class="pad-t">
-        &lt;label for="account type">Account Type&lt;/label>
-        &lt;select id="account type" name="_account type">
-          &lt;option>Choose&lt;/option>
-          &lt;option>Freemium $0&lt;/option>
-          &lt;option>Premium $5/month&lt;/option>
-          &lt;option>Pro $8/month&lt;/option>
-        &lt;/select>
-      &lt;/div>
-
-
-      &lt;input id="Visa" type="radio" name="payment">
-      &lt;label for="Visa">Visa&lt;/label>
-
-      &lt;input id="Mastercard" type="radio" name="feels">
-      &lt;label for="Mastercard">Mastercard&lt;/label>
-
-      &lt;input id="Paypal" type="radio" name="feels">
-      &lt;label for="Paypal">Paypal&lt;/label>
-
-
-      &lt;div class="pad-t">
-        &lt;label for="Cardholder Name">Carholder Name:&lt;/label>
-        &lt;input id="Cardholder Name" type="Cardholder Name" name="Cardholder Name">
-      &lt;/div>
-
-      &lt;div class="pad-t">
-        &lt;label for="Expiration Date">Expiration Date&lt;/label>
-        &lt;input id="Expiration Date" type="date" name="expiration">
-      &lt;/div>
-
-      &lt;div class="pad-t">
-        &lt;label for="C.V.V.">C.V.V.&lt;/label>
-        &lt;input id="C.V.V." type="C.V.V." name="C.V.V.">
-      &lt;/div>
-    &lt;/fieldset>
+    &lt;label for="name">Full Name&lt;/label>
+    &lt;input id="name" placeholder="Firstname Lastname" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-5 push-0" id="name-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide a name&lt;/span>&lt;/p>
   &lt;/div>
 
   &lt;div class="push-1-2">
+    &lt;label for="name">Dog&apos;s Name on Loyal Rescue Inc. Website&lt;/label>
+    &lt;input id="dogname" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-5 push-0" id="dogname-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide the name of the dog you wish to adopt or foster&lt;/span>&lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="name">Email&lt;/label>
+    &lt;input id="email" placeholder="me@gmail.com" required aria-describedby="email-error">
+    &lt;p class="error-message milli island-1-5 push-0" id="email-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please provide an valid email&lt;/span>&lt;/p>
+  &lt;/div>
+
+  &lt;fieldset class="push-0">
+    &lt;legend class="bold">Purpose for filling out the form&lt;/legend>
+    &lt;input type="radio" id="adopt" name="adopt" required aria-describedby="purpose-error">
+    &lt;label class="normal" for="adopt">Adoption&lt;/label>
+    &lt;input type="radio" id="foster" name="foster" required aria-describedby="purpose-error">
+    &lt;label class="normal" for="foster">Foster&lt;/label>
+    &lt;p class="error-message milli island-1-5 push-0" id="purpose-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please select your intent or the purpose for filling out this form from the drop down menu&lt;/span>
+    &lt;/p>
+  &lt;/fieldset>
+
+  &lt;div class="push-1-2">
+    &lt;label for="info">Info (optional)&lt;/label>
+    &lt;textarea id="info" name="textarea">&lt;/textarea>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="province">Province&lt;/label>
+    &lt;select id="province" name="_province" required aria-describedby="province-error">
+      &lt;option value="">Choose your province&lt;/option>
+      &lt;option>Alberta&lt;/option>
+      &lt;option>British Columbia&lt;/option>
+      &lt;option>Manitoba&lt;/option>
+      &lt;option>New Brunswick&lt;/option>
+      &lt;option>Newfoundland and Labrador&lt;/option>
+      &lt;option>Nova Scotia&lt;/option>
+      &lt;option>Ontario&lt;/option>
+      &lt;option>Prince Edward Island&lt;/option>
+      &lt;option>Quebec&lt;/option>
+      &lt;option>Saskatchewan&lt;/option>
+    &lt;/select>
+    &lt;p class="error-message milli island-1-5 push-0" id="province-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please select your province from the drop down menu&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2 pad-t-1-2">
     &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
-    &lt;label for="agree">You&apos;r now agreeing to the following terms:&lt;/label>
-    &lt;p class="error-message milli island-1-4 push-0" id="agree-error">&lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>&lt;span class="icon-label">Please agree to the following terms in order to submit.&lt;/span>&lt;/p>
+    &lt;label for="agree">I agree to the &lt;a>Terms and conditions&lt;/a>&lt;/label>
+    &lt;p class="error-message milli island-1-5 push-0" id="agree-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please agree the terms and conditions to continue&lt;/span>
+    &lt;/p>
   &lt;/div>
 
   &lt;div class="pad-t-1-2">
