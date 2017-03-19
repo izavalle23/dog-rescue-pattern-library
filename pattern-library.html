@@ -1076,23 +1076,103 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;header class="masthead grid grid-middle gutter-0"&gt;
-  &lt;div class="unit text-center xs-1 s-1 m-1-4 l-1-4">
-    &lt;a class="block" href="#">
-      &lt;i class="icon logo-icon">
-          &lt;svg>&lt;use xlink:href="../../images/icons.svg#nav"/>&lt;/svg>
-        &lt;/i>
-    &lt;/a>
+              <code><pre>&lt;ul class="skip-links"&gt;
+  &lt;li>&lt;a href="#application">Jump to application form&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#nav">Jump to navigation&lt;/a>&lt;/li>
+&lt;/ul>
+
+&lt;section id="banner">
+  &lt;div class="grid">
+    &lt;div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
+      &lt;div class="banner">
+        &lt;img class="img-flex" src="../../images/banner.jpg" alt="">
+      &lt;/div>
+      &lt;div class="info island push">
+        &lt;h2>Who Are We?&lt;/h2>
+        &lt;p>Loyal Rescue is a foster-based rescue focused on finding a loving home for all animals.&lt;/p>
+        &lt;a href="#adopt" class="btn btn-ghost">Learn More!&lt;/a>
+      &lt;/div>
+    &lt;/div>
   &lt;/div>
-  &lt;nav class="text-center xs-1 s-1 m-2-3 l-3-4">
-    &lt;ul class="nav push-0 list-group">
-      &lt;li>&lt;a class="giga gutter island-1-8 page unit" href="#">Home&lt;/a>&lt;/li>
-      &lt;li>&lt;a class="giga gutter island-1-8 page unit" href="#">Adopt&lt;/a>&lt;/li>
-      &lt;li>&lt;a class="giga gutter island-1-8 page unit" href="#">Foster&lt;/a>&lt;/li>
-      &lt;li>&lt;a class="giga gutter island-1-8 page unit" href="#">Apply&lt;/a>&lt;/li>
-    &lt;/ul>
-  &lt;/nav>
-&lt;/header>
+&lt;/section>
+
+&lt;section id="cards">
+  &lt;div class="basic-card">
+    &lt;div class="card island-1-4">
+      &lt;img class="img-flex" src="../../images/bowser.jpg" alt="">
+      &lt;h2 class="push-1-4 pad-t-1-4">Name of Dog&lt;/h2>
+      &lt;ul class="push-0 pad-b-1-4 list-group">
+        &lt;li>Breed:&lt;/li>
+        &lt;li>Age:&lt;/li>
+        &lt;li>Gender:&lt;/li>
+        &lt;li>Location:&lt;/li>
+      &lt;/ul>
+      &lt;div class="hover-info">
+        &lt;a href="#application" class="btn btn-ghost">Meet Bowser&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="icon-card">
+    &lt;div class="card island-1-2 text-center">
+      &lt;i class="icon i-128 push-1-4">
+          &lt;svg>&lt;use xlink:href="../../images/icons.svg#foster"/>&lt;/svg>&lt;/i>
+      &lt;h2 class="push-1-4">Foster&lt;/h2>
+      &lt;p class="push-0">Provide a temporary loving home for a special animal. By fostering an animale, you will be saving their life from being stuck in a cold cage or possible euthanization due to lack of space.&lt;/p>
+      &lt;div class="pad-t-2 push">
+        &lt;a href="#application" class="btn btn-ghost">Foster Today!&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
+
+&lt;section id="application">
+  &lt;div class="checkboxes">
+    &lt;form class="max-length island" method="post" novalidate="">
+      &lt;div class="push island-1-2">
+        &lt;div class="push-1-2 pad-t-1-2">
+          &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+          &lt;label for="agree">I agree to the terms and conditions&lt;/label>
+          &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
+            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+            &lt;span class="icon-label">You cannot move forward unless you agree to the terms and conditions.&lt;/span>
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/form>
+
+  &lt;/div>
+
+  &lt;div class="drop-down-menu">
+    &lt;form class="max-length island" method="post" novalidate="">
+      &lt;div class="push-1-2">
+        &lt;label for="gender">GENDER&lt;/label>
+        &lt;select name="gender">
+          &lt;option value="indicate">Please Indicate&lt;/option>
+          &lt;option value="female">Female&lt;/option>
+          &lt;option value="male">Male&lt;/option>
+          &lt;option value="both">Both&lt;/option>
+        &lt;/select>
+      &lt;/div>
+    &lt;/form>
+  &lt;/div>
+
+  &lt;div class="email-inputs">
+    &lt;form class="max-length island" method="post" novalidate="">
+      &lt;div class="push island-1-2">
+        &lt;div class="push-1-2">
+          &lt;label for="email">EMAIL&lt;/label>
+          &lt;input type="email" id="email" required aria-describedby="email-error">
+          &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/alert.svg"/>&lt;/svg>&lt;/i>
+            &lt;span class="icon-label">Please provide a real email address.&lt;/span>
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/form>
+
+  &lt;/div>
+&lt;/section>
 </pre></code>
             </div>
           </div>
