@@ -1,20 +1,6 @@
 .flag-optional {
-  color: #999;
-}
-
-fieldset {
-  border: none;
-}
-
-legend {
-  background-color: var(--color-accent-primary);
-  color: var(--color-primary-light);
-  width: 100%;
-}
-
-li {
-  padding-right: .325rem;
-  padding-bottom: .325rem;
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
 }
 
 .is-validated input:invalid,
@@ -22,19 +8,14 @@ li {
   border-color: #f33;
 }
 
-.is-validated input:invalid,
-.is-validated input[type="radio"]:invalid + label::before {
-  border-color: #f33;
-}
-
 .error-message {
   display: none;
   background-color: #fee;
-  color: #c33;
+  color: var(--color-accent);
 }
 
 .error-message-highlighted {
-  background-color: #c33;
+  background-color: var(--color-accent);
   color: #fff;
 }
 
@@ -42,4 +23,49 @@ li {
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: block;
+}
+
+label {
+  font-family: var(--font-secondary);
+}
+
+p span {
+  color: var(--color-accent);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  transition: all 250ms linear;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+.title {
+  background-color: var(--color-primary-dark);
+}
+
+.field-group {
+  background-color: var(--color-primary);
+}
+
+h2, h3, legend {
+  color: #f2f2f2;
+  font-family: var(--font-secondary);
+}
+
+input, textarea, select {
+  background-color: var(--color-neutral-beige);
+  border-style: none;
+  transition: background-color 500ms linear;
+}
+
+input:focus, textarea:focus, select:focus {
+  background-color: var(--color-primary-light);
+  outline: 0;
 }
