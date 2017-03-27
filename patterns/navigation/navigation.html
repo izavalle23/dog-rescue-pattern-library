@@ -2,116 +2,39 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Email inputs</title>
+  <title>Form Nav</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
   <link href="../../common/type.css" rel="stylesheet">
   <link href="../../common/theme.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700" rel="stylesheet">
-  <link href="banner.css" rel="stylesheet">
-  <link href="cards.css" rel="stylesheet">
-  <link href="form.css" rel="stylesheet">
-  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="nav.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 </head>
 <body>
 
-  <ul class="skip-links">
-    <li><a href="#application">Jump to application form</a></li>
-    <li><a href="#nav">Jump to navigation</a></li>
-  </ul>
-
-  <section id="banner">
-    <div class="grid">
-      <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4">
-        <div class="banner">
-          <img class="img-flex" src="../../images/banner.jpg" alt="">
-        </div>
-        <div class="info island push">
-          <h2>Who Are We?</h2>
-          <p>Loyal Rescue is a foster-based rescue focused on finding a loving home for all animals.</p>
-          <a href="#adopt" class="btn btn-ghost">Learn More!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cards">
-    <div class="basic-card">
-      <div class="card island-1-4">
-        <h2 class="push-1-4 pad-t-1-4">Name of Dog</h2>
-        <ul class="push-0 pad-b-1-4 list-group">
-          <li>Breed:</li>
-          <li>Age:</li>
-          <li>Gender:</li>
-          <li>Location:</li>
-        </ul>
-        <div class="hover-info">
-          <a href="#application" class="btn btn-ghost">Meet Bowser</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="icon-card">
-      <div class="card island-1-2 text-center">
-        <i class="icon i-128 push-1-4">
-          <svg><use xlink:href="../../images/icons.svg#foster" /></svg></i>
-        <h2 class="push-1-4">Foster</h2>
-        <p class="push-0">Provide a temporary loving home for a special animal. By fostering an animale, you will be saving their life from being stuck in a cold cage or possible euthanization due to lack of space.</p>
-        <div class="pad-t-2 push">
-          <a href="#application" class="btn btn-ghost">Foster Today!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="application">
-    <div class="checkboxes">
-      <form class="max-length island" method="post" novalidate>
-        <div class="push island-1-2">
-          <div class="push-1-2 pad-t-1-2">
-            <input type="checkbox" id="agree" required aria-describedby="agree-error">
-            <label for="agree">I agree to the terms and conditions</label>
-            <p class="error-message milli island-1-4 push-0" id="agree-error">
-              <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-              <span class="icon-label">You cannot move forward unless you agree to the terms and conditions.</span>
-            </p>
-          </div>
-        </div>
-      </form>
-      <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-    </div>
-
-    <div class="drop-down-menu">
-      <form class="max-length island" method="post" novalidate>
-        <div class="push-1-2">
-          <label for="radius">GENDER</label>
-          <select name="gender">
-            <option value="indicate">Please Indicate</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="both">Both</option>
-          </select>
-        </div>
-      </form>
-    </div>
-
-    <div class="email-inputs">
-      <form class="max-length island" method="post" novalidate>
-        <div class="push island-1-2">
-          <div class="push-1-2">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" required aria-describedby="email-error">
-            <p class="error-message milli island-1-4 push-0" id="email-error">
-              <i class="icon i-16"><svg><use xlink:href="../images/alert.svg" /></svg></i>
-              <span class="icon-label">Please provide a real email address.</span>
-            </p>
-          </div>
-        </div>
-      </form>
-      <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
-    </div>
-  </section>
+  <div class="icon-nav text-center">
+    <a class="inline-block" href="#">
+      <i class="icon i-96">
+        <svg><use xlink:href="../../images/form-nav.svg#1" /></svg>
+      </i>
+    </a>
+    <a class="inline-block" href="#">
+      <i class="icon i-96">
+        <svg><use xlink:href="../../images/form-nav.svg#2" /></svg>
+      </i>
+    </a>
+    <a class="inline-block" href="#">
+      <i class="icon i-96">
+        <svg><use xlink:href="../../images/form-nav.svg#3" /></svg>
+      </i>
+    </a>
+    <a class="inline-block" href="#">
+      <i class="icon i-96">
+        <svg><use xlink:href="../../images/form-nav.svg#4" /></svg>
+      </i>
+    </a>
+  </div>
 
 </body>
 </html>
