@@ -2,39 +2,52 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Form Nav</title>
+  <title>Main nav</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
   <link href="../../common/type.css" rel="stylesheet">
   <link href="../../common/theme.css" rel="stylesheet">
-  <link href="nav.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="main-nav.css" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
 </head>
 <body>
 
-  <div class="icon-nav text-center">
-    <a class="inline-block" href="#">
-      <i class="icon i-96">
-        <svg><use xlink:href="../../images/form-nav.svg#1" /></svg>
-      </i>
-    </a>
-    <a class="inline-block" href="#">
-      <i class="icon i-96">
-        <svg><use xlink:href="../../images/form-nav.svg#2" /></svg>
-      </i>
-    </a>
-    <a class="inline-block" href="#">
-      <i class="icon i-96">
-        <svg><use xlink:href="../../images/form-nav.svg#3" /></svg>
-      </i>
-    </a>
-    <a class="inline-block" href="#">
-      <i class="icon i-96">
-        <svg><use xlink:href="../../images/form-nav.svg#4" /></svg>
-      </i>
-    </a>
-  </div>
+<header class="masthead text-center island-1-2">
+  <a href="#home" class="icon-link" alt="#" id="logo">
+    <i class="icon i-64 inline-block push push-r-1-2">
+      <img src="../../images/logo-64.svg">
+    </i>
+    <h1 class="company-name inline-block">Loyal Dog Rescue</h1>
+  </a>
+
+  <nav class="main-nav push-0" id="nav">
+
+    <ul class="nav list-group-inline text-center push-0">
+
+      <li class="island-1-8">
+        <a href="#home" class="btn text-center">
+          <p class="push-0">Home</p>
+        </a>
+      </li>
+
+      <li class="island-1-8">
+        <a href="#find-a-dog" class="btn btn-em text-center">
+          <p class="push-0">Find a Dog</p>
+        </a>
+      </li>
+
+      <li class="island-1-8">
+        <a href="#adoption" class="btn text-center">
+          <p class="push-0">Adoption</p>
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+</header>
 
 </body>
 </html>
