@@ -1,1 +1,1 @@
-- The main navigation will be used on the top of every page. It will contain links to every page including the page the user is on.
+- Main navigation for the website, used to get to every page. The logo also functions as a home button since people are used to that. Will be also used for the bottom navigation, which is the footer.

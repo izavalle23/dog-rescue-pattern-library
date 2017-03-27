@@ -1,0 +1,11 @@
+a {
+  color: #000;
+}
+
+small {
+  color: #000;
+}
+
+.footer {
+  background-color: var(--color-secondary-primary);
+}

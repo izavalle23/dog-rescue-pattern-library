@@ -1,6 +1,26 @@
-.flag-optional {
-  color: var(--color-accent);
+body {
+  background-color: #fff;
+}
+
+
+label {
   font-family: var(--font-secondary);
+}
+
+legend {
+  font-family: var(--font-secondary);
+}
+
+.form-title {
+  color: var(--color-accent);
+}
+
+.form-list {
+  list-style-type: none;
+}
+
+.flag-optional {
+  color: #999;
 }
 
 .is-validated input:invalid,
@@ -11,61 +31,11 @@
 .error-message {
   display: none;
   background-color: #fee;
-  color: var(--color-accent);
-}
-
-.error-message-highlighted {
-  background-color: var(--color-accent);
-  color: #fff;
+  color: #c33;
 }
 
 .is-validated > .error-message:first-child,
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: block;
-}
-
-label {
-  font-family: var(--font-secondary);
-}
-
-p span {
-  color: var(--color-accent);
-}
-
-.btn {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
-  transition: all 250ms linear;
-}
-
-.btn:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-  color: #fff;
-}
-
-.title {
-  background-color: var(--color-primary-dark);
-}
-
-.field-group {
-  background-color: var(--color-primary);
-}
-
-h2, h3, legend {
-  color: #f2f2f2;
-  font-family: var(--font-secondary);
-}
-
-input, textarea, select {
-  background-color: var(--color-neutral-beige);
-  border-style: none;
-  transition: background-color 500ms linear;
-}
-
-input:focus, textarea:focus, select:focus {
-  background-color: var(--color-primary-light);
-  outline: 0;
 }
