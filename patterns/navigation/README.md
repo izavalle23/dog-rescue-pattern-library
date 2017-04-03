@@ -1,1 +1,1 @@
-- Main navigation for the website, used to get to every page. The logo also functions as a home button since people are used to that. Will be also used for the bottom navigation, which is the footer.
+- Main navigation for the website, used to get to every page. I added The logo to have functions as a home button. I'm going to be  using this navigation for the footer in every page.

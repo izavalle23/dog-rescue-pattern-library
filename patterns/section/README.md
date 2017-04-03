@@ -1,1 +1,1 @@
-This is the header that will continue across all 3 website pages.
+- Turns into a clickable carousel at small screens for better usability, once the media query hits 38em,the grid is able to expand a desirable image.

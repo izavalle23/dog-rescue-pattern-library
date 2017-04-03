@@ -1,17 +1,17 @@
 .banner {
-  position: relative;
-}
-
-img {
-  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, .05) 45%, black), url("images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-p {
-  position: absolute;
-  bottom: 25%;
-  color: #fff;
-  left: 50%;
+.banner-content {
+  padding-top: 50%;
+}
+
+.banner-text {
+  width: 40%;
+  bottom: 12%;
+  left: 30%;
   transform: translateX(-50%);
-  font-size: 4em;
 }

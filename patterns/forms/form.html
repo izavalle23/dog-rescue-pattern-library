@@ -9,7 +9,8 @@
   <link href="../../common/theme.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="forms.css">
+  <link href="form.css" rel="stylesheet">
+  <link href="../buttons/button.css" rel="stylesheet">
 </head>
 <body>
   <div class="title block">
@@ -46,13 +47,15 @@
       </div>
       <div class="push-1-2 unit xs-1 m-1-2 gutter-1-2">
         <label for="province" class="micro">PROVINCE</label>
-        <select class="micro" id="province" placeholder="Please select a province" required aria-describedby="province-error">
-          <option>Northwest Territories</option>
-          <option>British Columbia</option>
-          <option>Ontario</option>
-          <option>Alberta</option>
-          <option>Saskatchewan</option>
-        </select>
+        <input id="province" class="micro" list="province-list" required aria-describedby="province-error">
+        <datalist id="province-list">
+          <option value="Northwest Territories">
+          <option value="British Columbia">
+          <option value="Ontario">
+          <option value="Alberta">
+      </datalist>
+    </div>
+      <div>
         <p class="error-message milli island-1-4 push-0" id="province-error">
           <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#icon-error" /></svg></i>
           <span class="icon-label italic micro">Please select your province</span>
@@ -97,10 +100,12 @@
         </p>
       </div>
       <div class="pad-t-1-2 unit xs-1 gutter-1-2">
-        <button class="btn" type="submit">Send</button>
+        <button class="btn btn-light" type="submit">Send</button>
       </div>
     </fieldset>
+
   </form>
+
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

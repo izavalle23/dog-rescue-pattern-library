@@ -1,0 +1,17 @@
+.carousel-items > div {
+  display: none;
+}
+
+#story1-control:checked ~ .carousel-inner #story1,
+#story2-control:checked ~ .carousel-inner #story2,
+#story3-control:checked ~ .carousel-inner #story3,
+#story4-control:checked ~ .carousel-inner #story4 {
+  display: block;
+}
+
+@media only screen and (min-width: 38em) {
+  .carousel-items > div {
+    display: block;
+
+  }
+}

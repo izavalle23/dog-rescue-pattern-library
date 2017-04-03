@@ -1,22 +1,13 @@
-html {
-  font-family: var(--font-secondary);
-}
-
 .masthead {
-  background-size: 64px;
-  background-color: var(--color-primary);
+  background-color: #fff;
+  border-top: 0 solid var(--color-primary);
+  border-bottom: 0 solid var(--color-primary);
+  color: var(--color-primary);
+  background-size: 16px;
 }
 
 h1 {
-  font-family: var(--font-primary);
-  font-weight: normal;
-  font-size: 3.5em;
   display: inline-block;
-}
-
-.logo {
-  text-align: center;
-  color: #fff;
 }
 
 .nav {
@@ -25,38 +16,61 @@ h1 {
 
 .nav a {
   text-decoration: none;
-  color: #fff;
-  background-color: var(--color-primary);
-  transition: all 400ms linear
+  border: 3px solid var(--color-primary);
+  border-radius: 0;
+  background-color: #fff;
+  color: var(--color-primary);
 }
 
-.nav a:hover, .nav a:focus {
-  background-color: var(--color-secondary);
-  color: #fff;
-  border-radius: 20px;
-  background-size: 100px auto;
+.nav a:hover {
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
-  outline: 0;
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
-.nav a:active {
-  background-color: var(--color-secondary-light);
-}
+  @media only screen and (min-width: 38em) {
 
-@media only screen and (min-width: 60em) {
+    img {
+      width: 60px;
+      height: 60px;
+    }
 
-  h1 {
-    display: inline-block;
-    font-size: 2em;
-  }
+      .logo {
+        text-align: left;
+      }
 
-  .logo {
-    text-align: left;
-  }
+      .nav {
+        text-align: right;
+      }
 
-  .nav {
-    text-align: right;
-  }
+  @media only screen and (min-width: 60em) {
 
-}
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+      .logo {
+        text-align: left;
+      }
+
+      .nav {
+        text-align: right;
+      }
+
+  @media only screen and (min-width: 90em) {
+
+    img {
+      width: 190px;
+      height: 190px;
+    }
+
+      .logo {
+        text-align: left;
+      }
+
+      .nav {
+        text-align: right;
+      }

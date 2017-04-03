@@ -1,11 +1,17 @@
-a {
-  color: #000;
-}
-
-small {
-  color: #000;
-}
-
 .footer {
-  background-color: var(--color-secondary-primary);
+  background-color:#000;
+}
+
+.nav {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .divider {
+    border-right: 2px solid var(--color-secondary);
+}
+
+  .nav {
+    display: block;
+    text-align: center;
 }
