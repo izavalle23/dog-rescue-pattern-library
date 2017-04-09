@@ -2,16 +2,21 @@
   display: none;
 }
 
-#story1-control:checked ~ .carousel-inner #story1,
-#story2-control:checked ~ .carousel-inner #story2,
-#story3-control:checked ~ .carousel-inner #story3,
-#story4-control:checked ~ .carousel-inner #story4 {
+#tab1-control:checked ~ .carousel-inner #tab1,
+#tab2-control:checked ~ .carousel-inner #tab2,
+#tab3-control:checked ~ .carousel-inner #tab3,
+#tab4-control:checked ~ .carousel-inner #tab4 {
   display: block;
 }
 
-@media only screen and (min-width: 38em) {
-  .carousel-items > div {
-    display: block;
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
 
-  }
+#tab1-control:checked ~ .carousel-inner [for="tab1-control"],
+#tab2-control:checked ~ .carousel-inner [for="tab2-control"],
+#tab3-control:checked ~ .carousel-inner [for="tab3-control"],
+#tab4-control:checked ~ .carousel-inner [for="tab4-control"] {
+  background-color: #000;
 }
