@@ -3,7 +3,7 @@
   border-top: 0 solid var(--color-primary);
   border-bottom: 0 solid var(--color-primary);
   color: var(--color-primary);
-  background-size: 16px;
+  background-size: 64px;
 }
 
 h1 {

@@ -1,20 +1,21 @@
+.footer-link {
+  color: #E59A25;
+}
+
+.footer-copyright {
+  color: #E59A25;
+  text-align: center;
+}
+
 .footer {
-  background-color: #000;
+  background-color: var(--color-primary);
 }
 
-.nav {
-  display: none;
+.footer-nav {
+  text-align: center;
 }
 
-@media only screen and (min-width: 38em) {
-
-  .divider {
-    border-right: 2px solid var(--color-secondary);
-  }
-
-  .nav {
-    display: block;
-    text-align: center;
-  }
-
+.footer-text {
+  color: #E59A25;
+  text-align: center;
 }

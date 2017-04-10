@@ -1,17 +1,44 @@
 .banner {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, .05) 45%, black), url("images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: none;
 }
 
-.banner-content {
-  padding-top: 50%;
-}
+@media only screen and (min-width: 38em) {
 
-.banner-text {
-  width: 40%;
-  bottom: 12%;
-  left: 30%;
-  transform: translateX(-50%);
+  .banner {
+    display: block;
+    position: relative;
+  }
+
+  .banner-img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .banner-text {
+    position: absolute;
+    bottom: 30%;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .btn-blue {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: all 500ms linear;
+    color: #fff;
+  }
+
+  .btn-blue:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: var(--color-primary);
+  }
 }
