@@ -2,26 +2,54 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Find a dog section</title>
+  <title>Find a dog</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../../common/modules.css" rel="stylesheet">
-  <link href="../../common/grid.css" rel="stylesheet">
-  <link href="../../common/type.css" rel="stylesheet">
-  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Source+Code+Pro:400,700" rel="stylesheet">
-  <link href="../cards/cards.css" rel="stylesheet">
-  <link href="find-dog-page.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/navigation/navigation.css" rel="stylesheet">
+  <link href="../patterns/banner/banner.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/buttons/button.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/section/find-dog-carousel.css" rel="stylesheet">
+  <link href="../patterns/section/main-page-cardcarousel.css" rel="stylesheet">
 </head>
 <body>
+
+  <header class="masthead text-center island-1-2">
+    <a href="index.html" class="icon-link" id="logo">
+      <i class="icon i-64 inline-block push push-r-1-2">
+        <img src="../images/logo-64.svg" alt="Loyal rescue logo">
+      </i>
+      <h1 class="company-name inline-block">Loyal Dog Rescue</h1>
+    </a>
+    <nav class="text-center xs-1 s-1 m-1 l-3-4">
+      <ul class="nav push-0 list-group">
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Home</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Adopt</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Foster</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Apply</a></li>
+      </ul>
+    </nav>
+
+      <section class="text-section">
+        <h1 class="h1-text">Help us bring a little sushine to their lives.</h1>
+        <p class="p-text push-2">A little intro into what we do and who we are.<br>We like to help and save lives of pets that need homes!<br>You can make a difference in giving love and care and the best life possible to a dog today!</p>
+      </section>
+
+  </header>
 
   <section>
 
     <div class="page">
       <input class="page-input" type="radio" name="cards" id="tab1-control" checked>
-      <input class="page-input" type="radio" name="cards" id="tab2-control">
-      <input class="page-input" type="radio" name="cards" id="tab3-control">
-      <input class="page-input" type="radio" name="cards" id="tab4-control">
+      <input class="page-input" type="radio" name="cards" id="tab2-control" checked>
+      <input class="page-input" type="radio" name="cards" id="tab3-control" checked>
+      <input class="page-input" type="radio" name="cards" id="tab4-control" checked>
 
       <div class="page-inner relative">
         <div class="page-items">
@@ -30,9 +58,9 @@
 
             <div class="grid">
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Willow 8201</h2>
+                  <h2 class="push-0">Wally</h2>
                   <ul class="list-group push-1-4">
                     <li>Corgi</li>
                     <li>8 years old</li>
@@ -43,9 +71,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Scotty 8201</h2>
+                  <h2 class="push-0">Lola</h2>
                   <ul class="list-group push-1-4">
                     <li>Yorkie</li>
                     <li>1 years old</li>
@@ -56,9 +84,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Fluffy 8201</h2>
+                  <h2 class="push-0">Snuffles</h2>
                   <ul class="list-group push-1-4">
                     <li>Cerberus</li>
                     <li>46 years old</li>
@@ -69,9 +97,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Butters 8201</h2>
+                  <h2 class="push-0">Butters</h2>
                   <ul class="list-group push-1-4">
                     <li>Kid</li>
                     <li>8 years old</li>
@@ -87,9 +115,9 @@
 
             <div class="grid">
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Cujo 8201</h2>
+                  <h2 class="push-0">Smarties</h2>
                   <ul class="list-group push-1-4">
                     <li>St. Bernard</li>
                     <li>36 years old</li>
@@ -100,9 +128,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">DOGE 8201</h2>
+                  <h2 class="push-0">Nina</h2>
                   <ul class="list-group push-1-4">
                     <li>Shiba Inu</li>
                     <li>3 years old</li>
@@ -113,9 +141,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Toto 8201</h2>
+                  <h2 class="push-0">Toto</h2>
                   <ul class="list-group push-1-4">
                     <li>Brindle Terrier</li>
                     <li>35 years old</li>
@@ -126,9 +154,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Scooby Doo 8201</h2>
+                  <h2 class="push-0">Mauri</h2>
                   <ul class="list-group push-1-4">
                     <li>Great Dane</li>
                     <li>20 years old</li>
@@ -143,9 +171,9 @@
           <div class="page-item" id="tab3">
             <div class="grid">
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Pongo 8201</h2>
+                  <h2 class="push-0">Paul</h2>
                   <ul class="list-group push-1-4">
                     <li>Dalmation</li>
                     <li>10 years old</li>
@@ -156,9 +184,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Perdita 8201</h2>
+                  <h2 class="push-0">Birdie</h2>
                   <ul class="list-group push-1-4">
                     <li>Dalmation</li>
                     <li>9 years old</li>
@@ -169,9 +197,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Cooper 8201</h2>
+                  <h2 class="push-0">Kirby</h2>
                   <ul class="list-group push-1-4">
                     <li>Hound</li>
                     <li>1 years old</li>
@@ -182,9 +210,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Air Bud 8201</h2>
+                  <h2 class="push-0">Air Bud</h2>
                   <ul class="list-group push-1-4">
                     <li>Golden Retriever</li>
                     <li>6 years old</li>
@@ -199,9 +227,9 @@
           <div class="page-item" id="tab4">
             <div class="grid">
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Wishbone 8201</h2>
+                  <h2 class="push-0">Wishbone</h2>
                   <ul class="list-group push-1-4">
                     <li>Jack Russell Terrier</li>
                     <li>8 years old</li>
@@ -212,9 +240,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Marley 8201</h2>
+                  <h2 class="push-0">Marley</h2>
                   <ul class="list-group push-1-4">
                     <li>Labrador Retriever</li>
                     <li>2 years old</li>
@@ -225,9 +253,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Beethoven 8201</h2>
+                  <h2 class="push-0">luna</h2>
                   <ul class="list-group push-1-4">
                     <li>St Bernard</li>
                     <li>10 years old</li>
@@ -238,9 +266,9 @@
               </div>
 
               <div class="unit [ xs-1 s-1 m-1-2 l-1-4 ] card island-1-2">
-                <a href="">
+                <a href="" class="carousel-btn">
                   <img src="http://placehold.it/200x150" class="push-1-2 img-flex" alt="">
-                  <h2 class="push-0">Hachiko 8201</h2>
+                  <h2 class="push-0">Danny</h2>
                   <ul class="list-group push-1-4">
                     <li>Akita</li>
                     <li>14 years old</li>
@@ -252,39 +280,60 @@
             </div>
           </div>
         </div>
-
-        <ul class="grid page-controls text-center pad-t max-length">
-          <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter">
-            <label for="tab1-control">
-              <span class="page-btn icon i-32 ir"></span>
-              <span class="page-number push-0">Page 1</span>
-            </label>
-          </li>
-
-          <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter">
-            <label for="tab2-control">
-              <span class="page-btn icon i-32 ir"></span>
-              <span class="page-number push-0">Page 2</span>
-            </label>
-          </li>
-
-          <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter">
-            <label for="tab3-control">
-              <span class="page-btn icon i-32 ir"></span>
-              <span class="page-number push-0">Page 3</span>
-            </label>
-          </li>
-
-          <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter">
-            <label for="tab4-control">
-              <span class="page-btn icon i-32 ir"></span>
-              <span class="page-number push-0">Page 4</span>
-            </label>
-          </li>
-        </ul>
       </div>
     </div>
   </section>
 
+  <section>
+    <div>
+            <ul class="grid page-controls text-center pad-t max-length">
+              <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter push-1-2">
+                <label for="tab1-control">
+                  <span class="page-btn btn-blue btn-b-no-border icon i-32 ir"></span>
+                  <span class="page-number push-0">Forms</span>
+                </label>
+              </li>
+
+              <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter push-1-2">
+                <label for="tab2-control">
+                  <span class="page-btn btn-blue btn-b-no-border icon i-32 ir"></span>
+                  <span class="page-number push-0">Pets</span>
+                </label>
+              </li>
+
+              <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter push-1-2">
+                <label for="tab3-control">
+                  <span class="page-btn btn-blue btn-b-no-border icon i-32 ir"></span>
+                  <span class="page-number push-0">Donate</span>
+                </label>
+              </li>
+
+              <li class="unit [ xs-1-2 s-1-2 m-1-4 l-1-4 ] inline-block gutter push-1-2">
+                <label for="tab4-control">
+                  <span class="page-btn btn-blue btn-b-no-border icon i-32 ir"></span>
+                  <span class="page-number push-0">Other Dogs</span>
+                </label>
+              </li>
+            </ul>
+    </div>
+
+    </section>
+
+  <footer class="footer">
+    <div class="max-length island-1-2">
+      <small class="block push-1-4 footer-copyright pad-t-1-4">©LOYAL RESCUE | ALL RIGHTS RESERVED</small>
+      <p class="footer-text push-1-4 milli">171 Rink St, Peterborough, ON K9J 2J6 | (705) 772-4916</p>
+      <nav>
+        <ol class="footer-nav list-group-inline push-0 milli">
+          <li><a class="block pad-r-1-2 footer-link" href="#home">Home</a></li>
+          <li><a class="block gutter-1-2 footer-link" href="#adopt">Adopt</a></li>
+          <li><a class="block gutter-1-2 footer-link" href="#foster">Foster</a></li>
+          <li><a class="block pad-l-1-2 footer-link" href="#apply">Apply</a></li>
+        </ol>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
