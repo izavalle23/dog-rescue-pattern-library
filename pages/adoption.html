@@ -2,17 +2,56 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Forms</title>
-  <link href="../../common/modules.css" rel="stylesheet">
-  <link href="../../common/grid.css" rel="stylesheet">
-  <link href="../../common/type.css" rel="stylesheet">
-  <link href="../../common/theme.css" rel="stylesheet">
+  <title>Adoption</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,700" rel="stylesheet">
-  <link href="form.css" rel="stylesheet">
-  <link href="../buttons/button.css" rel="stylesheet">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/navigation/navigation.css" rel="stylesheet">
+  <link href="../patterns/banner/banner.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/buttons/button.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/section/find-dog-carousel.css" rel="stylesheet">
+  <link href="../patterns/section/main-page-cardcarousel.css" rel="stylesheet">
 </head>
 <body>
+
+  <header class="masthead text-center island-1-2">
+    <a href="index.html" class="icon-link" id="logo">
+      <i class="icon i-64 inline-block push push-r-1-2">
+        <img src="../images/logo-64.svg" alt="Loyal rescue logo">
+      </i>
+      <h1 class="company-name inline-block">Loyal Dog Rescue</h1>
+    </a>
+    <nav class="text-center">
+      <ul class="nav push-0 list-group">
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Home</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Adopt</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Foster</a></li>
+        <li class="nav-btn btn-blue btn-b-no-border"><a class="giga gutter island-1-8 page unit nav-link" href="#">Apply</a></li>
+      </ul>
+    </nav>
+
+      <section class="text-section">
+        <h2 class="h1-text">Help us bring a little sushine to their lives.</h2>
+        <p class="p-text push-2">A little intro into what we do and who we are.<br>We like to help and save lives of pets that need homes!<br>You can make a difference in giving love and care and the best life possible to a dog today!</p>
+      </section>
+
+  </header>
+
+    <section>
+      <div class="max-length text-section gutter">
+        <h2 class="yotta pad-t push-1-2 page-title">Dog Adoption Application</h2>
+        <p class="body-copy">Adopting a rescue dog is a serious endevour and should not be done as a spur of the moment action.</p>
+        <p class="body-copy">Most of these questions do not have a right or wrong answer. They are a way for us to verify that the dog you have selected would be suited to your home and life style.</p>
+        <p class="body-copy pad-b">Please fill in all fields and be thorough with your answers as it will help us determine if you are a match.</p>
+      </div>
+    </section>
+  </header>
   <form class="wrapper island" method="post" novalidate="">
       <div class="grid grid-stretch">
         <div class="unit xs-1 s-1 m-1-2 l-1-2">
@@ -159,6 +198,20 @@
 
 </main>
 
+    <footer class="footer">
+        <div class="max-length island-1-2 text-center">
+          <small class="block push-1-4 footer-copyright pad-t-1-4">©LOYAL RESCUE | ALL RIGHTS RESERVED</small>
+          <p class="footer-text push-1-4 milli">171 Rink St, Peterborough, ON K9J 2J6 | (705) 772-4916</p>
+          <nav>
+            <ol class="footer-nav list-group-inline push-0 milli">
+              <li><a class="block pad-r-1-2 footer-link" href="#home">Home</a></li>
+              <li><a class="block gutter-1-2 footer-link" href="#adopt">Adopt</a></li>
+              <li><a class="block gutter-1-2 footer-link" href="#foster">Foster</a></li>
+              <li><a class="block pad-l-1-2 footer-link" href="#apply">Apply</a></li>
+            </ol>
+          </nav>
+        </div>
+      </footer>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
