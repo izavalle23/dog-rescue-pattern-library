@@ -22,7 +22,7 @@
     transform: translateX(-50%);
   }
 
-  .banner .btn {
+  .btn {
     position: absolute;
     bottom: 20%;
     left: 50%;
