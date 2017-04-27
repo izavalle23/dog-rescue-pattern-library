@@ -22,6 +22,6 @@
 #tab1-control:checked ~ .page-inner [for="tab1-control"] .page-btn btn-blue btn-b-no-border,
 #tab2-control:checked ~ .page-inner [for="tab2-control"] .page-btn btn-blue btn-b-no-border,
 #tab3-control:checked ~ .page-inner [for="tab3-control"] .page-btn btn-blue btn-b-no-border,
-#tab4-control:checked ~ .page-inner [for="tab4-control"] .page-btn btn-blue btn-b-no-border{
+#tab4-control:checked ~ .page-inner [for="tab4-control"] .page-btn btn-blue btn-b-no-border {
   background-color: var(--color-accent);
 }
